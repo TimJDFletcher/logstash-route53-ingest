@@ -1,4 +1,4 @@
-FROM docker.elastic.co/logstash/logstash:6.0.0-beta2
+FROM docker.elastic.co/logstash/logstash:6.2.4
 
 RUN logstash-plugin install logstash-input-cloudwatch_logs
 RUN rm /usr/share/logstash/pipeline/logstash.conf
